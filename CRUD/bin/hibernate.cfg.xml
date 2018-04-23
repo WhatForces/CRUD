@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+	<hibernate-configuration>
+		<session-factory>
+			<!-- JDBC连接 -->
+			<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+			<property name="hibernate.connection.url">jdbc:mysql:///test</property>
+			<property name="hibernate.connection.user">root</property>
+			<property name="hibernate.connection.password">root</property>
+			<!-- 控制台显示SQL语句 -->
+			<property name="hibernate.show_sql">true</property>
+			<!-- 字符编码及 -->
+			<property name="connection.characterEncoding">utf8</property>
+			<!-- 本地方言编辑 -->
+			<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+			<mapping resource="com/eduask/bean/User.hbm.xml"/>
+		</session-factory>
+	</hibernate-configuration>

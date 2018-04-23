@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+ 
+ <hibernate-mapping package="com.eduask.bean">
+ 	<class name="User" table="user">
+ 		<id name="id" type="int" column="id">
+ 			<generator class="native"/>
+ 		</id>
+ 		<property name="name" type="string" column="username"/>
+ 		<property name="password" type="string" column="password"/>
+ 		<property name="age" type="string" column="age"></property>
+ 	</class>
+ </hibernate-mapping>
